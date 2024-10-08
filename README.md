@@ -8,8 +8,12 @@ Login Proccess:
 * Server encrypts a confirmation code with the user's public PGP key
 * User enters decrypted code and is logged in by the fingerprint and the code
 
+Old Login Codes are purged all at once once above expiration time.
+
 GnuPG Required: 
 
 Linux: https://gnupg.org/download/index.html
 
 Windows: https://gnupg.org/ftp/gcrypt/binary/ 
+
+Please notify me if there are any glaring/conceptual security holes
