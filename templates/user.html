@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User</title>
+	<style>
+	body {
+		background: rgba(20, 20, 20, 1.0);
+		color: rgba(255, 255, 255, 0.5);
+		font-family: arial;
+		margin: 0;
+		padding: 0;
+	}
+	.logout {
+		color: rgba(255, 255, 255, 0.8);
+		text-decoration: none;
+		border-radius: 5px;
+		padding: 5px;
+		margin: 5px;
+		background: rgba(0, 0, 0, 0.5);
+		transition: color 0.2s ease, background 0.2s ease;
+	}
+	.logout:hover {
+		color: rgba(255, 255, 255, 0.6);
+		background: rgba(0, 0, 0, 0.4);
+	}
+	.logout:active {
+		color: rgba(255, 255, 255, 0.4);
+		background: rgba(0, 0, 0, 0.2);
+	}
+	top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 5px;
+		background: rgba(0, 0, 0, 0.5);
+		align-items: center;
+	}
+	</style>
+</head>
+<body>
+<top>{{user.display}}<a href="/user/logout" class="logout">Logout</a></top>
+</body>
+</html>

@@ -1,0 +1,7 @@
+py-jwt
+fastapi
+python-gnupg
+sqlalchemy
+uvicorn
+jinja
+asyncio
