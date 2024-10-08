@@ -10,4 +10,5 @@ Login Proccess:
 GnuPG Required: 
 
 Linux: https://gnupg.org/download/index.html
+
 Windows: https://gnupg.org/ftp/gcrypt/binary/ 
