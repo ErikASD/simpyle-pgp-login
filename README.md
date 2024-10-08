@@ -1,4 +1,5 @@
-Simpyl PGP login/register. Allows users to select display name from their PGP manager of choice. If colisions are found, a random digit is added until it is a valid display name (username).
+Simpyl PGP login/register. Allows users to select display name from their PGP manager of choice. 
+If Display name collisions are found, a random digit is added until a unique one is found.
 
 Login Proccess:
 
