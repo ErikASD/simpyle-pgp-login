@@ -24,7 +24,7 @@ class User(Base):
 
     def create(db, display, public_fingerprint, login_code):
         db_user = User.get_by_public_fingerprint(db, public_fingerprint)
-        if db_user:
+        if db_user: #protects against unlikely edge cases
             return db_user
 
         while User.exists(db, display):
