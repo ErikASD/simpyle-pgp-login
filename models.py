@@ -19,7 +19,7 @@ class User(Base):
     id = Column(String, primary_key=True, default=get_uuid)
     display = Column(String, unique=True, index=True)
     public_fingerprint = Column(String, unique=True, index=True)
-    login_codes = relationship("LoginCode", back_populates="user", order_by='LoginCode.time_created.asc()')
+    login_codes = relationship("LoginCode", back_populates="user", order_by='LoginCode.time_created.desc()')
     time_created = Column(Integer, default=get_current_time)
 
     def create(db, display, public_fingerprint, login_code):
